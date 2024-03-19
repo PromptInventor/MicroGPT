@@ -1,0 +1,35 @@
+<html>
+	<head>
+
+		<title>MicroGPT</title>
+
+		<link id="theme-style" rel="stylesheet" href="css/theme.css">
+
+		<script src="https://unpkg.com/blockly"></script>
+
+	</head>
+	<body>
+
+		<header class="header fixed-top">
+			<div class="branding docs-branding">
+				<div class="container-fluid position-relative py-2">
+					<div class="docs-logo-wrapper">
+						<div class="site-logo"><a class="navbar-brand" href="index.html"><!--<img class="logo logo-icon me-2" src="" alt="logo">--><span class="logo-text">Micro<span class="text-alt">GPT</span></span></a></div>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<div style="height: 100%; display:flex;">
+			<div id="blocklyDiv" style="width: 50%; border: lightgrey solid; border-width: thin"></div>
+			<div style="width: 50%;">
+				<embed id="gptDiv" style="height: 80%; border: lightgrey solid; border-width: thin" src="https://chat.openai.com/"></embed>
+				<div id="codeDiv" style="height: 20%; border: lightgrey solid; border-width: thin"></div>
+			</div>
+		</div>
+
+		<script type="module" src="index.js"></script>
+		<!--<script src="index.js"></script>-->
+
+	</body>
+</html>
